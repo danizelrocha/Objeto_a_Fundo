@@ -1,6 +1,6 @@
 //--------------Usando Fucition----------------
 
- function Tenis(tamanho, estoque, preco) {
+function Tenis(tamanho, estoque, preco) {
     return {
         tamanho: tamanho,
         estoque: estoque,
@@ -27,7 +27,7 @@ console.log(Tenis(35, true, "R$ 1.250,68"));
 
 
 
-//----------------Com Variaveis--------------------
+//----------------Com Variaveis--------------
 
 const tamanho = 40;
 const estoque = true;
@@ -42,7 +42,7 @@ const Tenis2 = {
 console.log(Tenis2)
 
 
-/* ----------------Metodos-------------- */
+//------------Com Metodos--------------
 
 const Tenis3 = {  
     getTamanho(){
