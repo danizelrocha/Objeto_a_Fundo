@@ -44,3 +44,10 @@ console.log(Tenis2)
 
 /* ----------------Metodos-------------- */
 
+const Tenis3 = {  
+    getTamanho(){
+        return 35
+    },
+};
+
+console.log( Tenis3())
