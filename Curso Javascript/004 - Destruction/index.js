@@ -45,3 +45,8 @@ const {
 } =Tenis;
 
 console.log(a,c);
+
+
+//ou
+
+console.log(Tenis.link.a, Tenis.link.b.c);
