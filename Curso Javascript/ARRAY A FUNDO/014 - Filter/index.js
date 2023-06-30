@@ -35,5 +35,5 @@ const filterCha = pedidos.filter((element, index) => {
         return element.bebida === "Chá";
     });
 
-console.log(1, pedidos);
-console.log(2, filterCha);
+console.log(1, pedidos);// pega todos os elementos
+console.log(2, filterCha);// pega o que foi  pedido
