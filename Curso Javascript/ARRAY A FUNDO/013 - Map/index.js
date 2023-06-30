@@ -42,10 +42,11 @@ const pedidos = [
 }); */
 
 
-// Trocando elementos evalidando pedido.
-pedido.map((element, index) => {
-    if(element.id === 29 && element.alimento === "Sushi"){
+// Trocando elementos e validando pedido.
+pedidos.map((element, index) => {
+    if (element.id === 29 && element.alimento === "Sushi"){
         return (element.alimento = "Sanduiche Natural");
     }
-    console.log(pedidos);
 });
+
+console.log(pedidos);
