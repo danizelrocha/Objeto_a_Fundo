@@ -21,6 +21,8 @@ contato.addEventListener("click", () => {
 
 // Como deve ser feito, melhorando a performance e manutenção
 
+//Utilizando o target
+
 const menu = document.querySelector("#menu");
 
 menu.addEventListener("click", (event) => {
