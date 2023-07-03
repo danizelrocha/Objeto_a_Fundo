@@ -1,5 +1,5 @@
 
-
+// usando ?
 
 /* const menu = document.querySelector("#menu");
 
@@ -22,6 +22,9 @@ menu?.addEventListener("click", (event) => {
     }
 
 }); */
+
+
+//Usando if
 
 const menu = document.querySelector("#menu")
 
