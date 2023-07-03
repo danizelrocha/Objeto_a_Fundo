@@ -26,28 +26,25 @@ menu?.addEventListener("click", (event) => {
 
 //Usando if
 
-const menu = document.querySelector("#menu")
+const menu = document.querySelector("#menu");
 
-if(menu) {
+if (menu) {
+  menu.addEventListener("click", (event) => {
+    const { target } = event;
+    const body = document.querySelector("body");
 
-    menu.addEventListener("click", (event) => {
-        const { target } = event;
-        const body = document.querySelector('body')
-    
-        switch (target.getAttribute("class")) {
-            case "home":
-                body.style.background = "red"
-                break;
-    
-            case "sobre":
-                body.style.background = "blue"
-                break;
-    
-            case "contato":
-                body.style.background = "pink"
-                break;
-        }
-    
-    });
+    switch (target.getAttribute("class")) {
+      case "home":
+        body.style.background = "blue";
+        break;
 
-} 
+      case "sobre":
+        body.style.background = "red";
+        break;
+
+      case "contato":
+        body.style.background = "#fff";
+        break;
+    }
+  });
+}
