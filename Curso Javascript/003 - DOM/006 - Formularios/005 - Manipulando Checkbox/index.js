@@ -1,10 +1,10 @@
 "use strict";
 
-const form = document.forms.namedItem("select-checkbox");
-const submit = document.querySelector("#submit");
-const change = document.querySelector("#change");
+const form = document.forms.namedItem("select-checkbox");// id
+const submit = document.querySelector("#submit");//id
+const change = document.querySelector("#change");//id
 
-let checkedValues = [];
+let checkedValues = [];//array vazio para que nada inicie selecionado. Criar com let para poder manipular os dados.
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -12,7 +12,7 @@ form.addEventListener("submit", (event) => {
 });
 
 form.checkbox.forEach((element) => {
-  element.addEventListener("change", (event) => {
+  element.addEventListener("change", (event) => {    //addEventListener o checkbox é um array para  que cada um tenha um id de inicio
     hasChecked(event, element);
     change.innerHTML = checkedValues;
   });
@@ -33,6 +33,3 @@ const hasChecked = (event, element) => {
     });
   }
 };
-
-
-
